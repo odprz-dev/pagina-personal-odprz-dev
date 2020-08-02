@@ -1,0 +1,14 @@
+.test{
+  @apply inline-block;
+  @apply bg-red-500;
+  @apply rounded-full;
+  @apply px-3;
+  @apply py-1;
+  @apply text-sm;
+  @apply font-semibold;
+  @apply text-white;
+}
+
+.test:hover{
+  @apply bg-red-700;
+}

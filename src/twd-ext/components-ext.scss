@@ -1,0 +1,22 @@
+.btn {
+  @apply rounded-md;
+}
+
+.btn:hover{
+
+  @apply opacity-25;
+
+}
+
+
+.btn-danger{
+
+  @apply bg-red-600;
+  @apply text-white;
+
+}
+
+.btn-primary{
+  @apply bg-blue-500;
+  @apply text-white;
+}
