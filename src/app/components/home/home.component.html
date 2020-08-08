@@ -1,1 +1,62 @@
-<p>home works!</p>
+<!--Hero Section-->
+<div class="flex justify-center">
+  <div class="xs:mx-8 md:mx-24 md:flex md:py-24 lg:px-24 xl:mx-0 xl:px-0 xl:w-3/4">
+    <div class="py-2 xs:flex xs:justify-center md:w64 md:order-2 md:flex-grow-0 md:flex-none">
+      <img class="w-48 md:h-64 md:w-64 rounded-full" src="assets/profile-pic-crop.jpg">
+    </div>
+
+    <div name="about" id="about" class="md:flex-col md:flex-1 md:order-1">
+      <div>
+        <h1 class="font-header text-5xl xs:text-center">¡Hola!</h1>
+      </div>
+      <div class="px-2 xs:text-center">
+        <h2 class=" text-4xl font-header">Soy Oscar Daniel Perez</h2>
+        <h3 class="text-2xl font-header md:p-4">Backend and Frontend Developer.</h3>
+      </div>
+      <div class="px-2 xs:pt-4 md:px-6 xl:py-12 xl:px-18">
+        <p>Soy desarrollador de Software y tengo experiencia en el desarrollo de
+          aplicaciones web orientadas a servicios Rest Api. Aunque he manejado diferentes lenguajes y frameworks tengo mayor experiencia utilizando las tecnologias DotNet Angular y Sql.
+          Si lo deseas puedes consultar mi CV haciendo click <a href="/assets/static/CV-OscarDanielPerez.pdf" download="CV-OscarDanielPerez.pdf">aquí.</a>
+        </p>
+      </div>
+    </div>
+    <div class="xs:hidden md:block flex-col pt-8 md:mx-2 md:px-4 my-auto">
+      <!--SocialMedia Icons-->
+        <a href="https://www.linkedin.com/in/oscar-daniel-perez-espinoza-b97b2133/" target="_blank"><img class="icon-s" src="assets/icons/inkedin-circle.svg"></a>
+        <a href="https://github.com/odprz-dev"><img class="icon-s" src="assets/icons/github.svg"></a>
+        <a href="https://gitlab.com/odprz"><img class="icon-s" src="assets/icons/gitlab.svg"></a>
+        <a href="https://twitter.com/YoSiSoyDanny"><img class="icon-s" src="assets/icons/tw-circlwe.svg"></a>
+    </div>
+  </div>
+</div>
+
+<!--Skills-->
+<div name="skills"  id="skills" class="flex-col">
+  <app-title-section titleSection="Skills°" ></app-title-section>
+
+  <div class="skills-container lg:flex lg:overflow-x-auto lg:flex-no-wrap">
+    <app-skills-card  *ngFor="let skill of skillList" [skill]="skill" ></app-skills-card>
+  </div>
+
+</div>
+
+<!--Herramientas-->
+<div name="tools"  id="tools">
+  <app-title-section titleSection="Tools°" ></app-title-section>
+
+  <div class="grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-4 py-4">
+    <div *ngFor="let img of tolsSrc"><img class="h-24" [src]="img"> </div>
+  </div>
+
+</div>
+
+<!--Blog Section-->
+<div name="blog" id="blog" class="mb-4">
+    <app-title-section titleSection="Blog°" ></app-title-section>
+  <div class="lg:flex">
+    <div class="mb-4  md:mr-8" *ngFor="let article of articleList">
+      <app-blog-entry ></app-blog-entry>
+    </div>
+  </div>
+
+</div>

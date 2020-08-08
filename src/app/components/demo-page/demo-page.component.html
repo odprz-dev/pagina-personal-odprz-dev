@@ -1,4 +1,4 @@
-<div class="max-w-sm mx-auto mt-10 rounded overflow-hidden shadow-lg space-y-4">
+<!-- <div class="max-w-sm mx-auto mt-10 rounded overflow-hidden shadow-lg space-y-4">
   <img
     class="h-64 w-full object-cover object-center"
     src="https://source.unsplash.com/random"
@@ -38,4 +38,79 @@
       #Odprz
     </a>
   </div>
+</div> -->
+
+<!--Hero Section-->
+<div class="flex justify-center">
+  <div class="xs:mx-8 md:mx-24 md:flex md:py-24 lg:px-24 xl:mx-0 xl:px-0 xl:w-3/4">
+    <div class="py-2 xs:flex xs:justify-center md:w64 md:order-2 md:flex-grow-0 md:flex-none">
+      <img class="w-48 md:h-64 md:w-64 rounded-full" src="assets/profile-pic-crop.jpg">
+    </div>
+
+    <div name="about" id="about" class="md:flex-col md:flex-1 md:order-1">
+      <div>
+        <h1 class="font-header text-5xl xs:text-center">¡Hola!</h1>
+      </div>
+      <div class="px-2 xs:text-center">
+        <h2 class=" text-4xl font-header">Soy Oscar Daniel Perez</h2>
+        <h3 class="text-2xl font-header md:p-4">Backend and Frontend Developer.</h3>
+      </div>
+      <div class="px-2 md:px-6 xl:py-12 xl:px-18">
+        <p>Soy desarrollador de Software y tengo experiencia en el desarrollo de
+          aplicaciones web orientadas a servicios Rest Api, utilizando las tecnologias DotNet Angular y Sql.
+          Si lo deceas puedes consultar mi CV haciendo click <a href="/assets/static/CV-OscarDanielPerez.pdf" download="CV-OscarDanielPerez.pdf">aquí.</a>
+        </p>
+      </div>
+    </div>
+    <div class="xs:hidden md:block flex-col pt-8 md:mx-2 md:px-4 my-auto">
+      <!--SocialMedia Icons-->
+      <div class="social-icon-hero">
+        <img class="social-icon-hero" src="assets/icons/inkedin-circle.svg">
+        <img class="social-icon-hero" src="assets/icons/github.svg">
+        <img class="social-icon-hero" src="assets/icons/gitlab.svg">
+        <img class="social-icon-hero" src="assets/icons/tw-circlwe.svg">
+        <img class="social-icon-hero sicon" src="assets/icons/mdm.svg">
+        <!-- <object class="social-icon-hero black-cn" data="assets/icons/sp.svg"></object> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="sicon" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Skills-->
+<div name="skills"  id="skills" class="flex-col">
+  <div class="text-center py-4"> <!--Sección Title-->
+    <h3 class="text-3xl font-bold">Skills°</h3>
+  </div>
+  <div class="skills-container lg:flex lg:overflow-x-auto lg:flex-no-wrap">
+    <app-skills-card  *ngFor="let skill of skillList" [skill]="skill" ></app-skills-card>
+  </div>
+
+</div>
+
+<!--Herramientas-->
+<div name="tools"  id="tools">
+  <div class="text-center py-8">
+    <h3 class="text-3xl font-bold">Tools°</h3>
+  </div>
+  <div class="grid xs:grid-cols-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-4 py-4">
+    <div *ngFor="let img of tolsSrc"><img class="h-24" [src]="img"> </div>
+  </div>
+
+</div>
+
+
+<div name="blog" id="blog" class="mb-4">
+
+  <div class="text-center py-8">
+    <h3 class="text-3xl font-bold">Blog°</h3>
+  </div>
+
+  <div class="lg:flex">
+    <div class="mb-4  md:mr-8" *ngFor="let article of articleList">
+      <app-blog-entry ></app-blog-entry>
+    </div>
+  </div>
+
 </div>

@@ -1,0 +1,25 @@
+<!-- <div class="flex w-full pt-6 pb-2">
+  <div class=" px-4">Logo</div>
+  <div class="w-full flex justify-end mx-12"><a>About</a> <a>Skills</a> <a>Port folio</a> <a>Blog</a></div>
+  <div class="mx-16"> <button class="btn btn-danger">Contacto</button></div>
+</div> -->
+
+<div class="md:flex md:pb-2">
+  <div class="xs:flex xs:justify-center md:pl-16 pt-4">
+    <a routerLink="/"><img class="w-16 md:w-24" src="../../../../assets/icon.png"></a>
+  </div>
+
+  <div class="pt-6 md:pt-12 font-semibold flex justify-center md:justify-end md:w-full md:mx-12">
+    <a routerLinkActive="active" href="home#about">About</a>
+    <a routerLinkActive="active" href="home#skills">Skills</a>
+    <a routerLinkActive="active" href="home#tools">Tools</a>
+    <a routerLinkActive="active" href="home#blog">Blog</a>
+  </div>
+
+  <div class="md:pt-10 md:mr-16 xs:flex xs:justify-center xs:py-4 md:block">
+
+    <form method="GET" action="/assets/static/CV-OscarDanielPerez.pdf">
+      <button class="btn btn-danger" href="/assets/static/CV-OscarDanielPerez.pdf" download="CV-OscarDanielPerez.pdf">Curriculum</button>
+    </form>
+  </div>
+</div>

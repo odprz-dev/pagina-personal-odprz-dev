@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss/base';
 
+@import './twd-ext/fonts-declaration.scss';
+
 @import 'tailwindcss/components';
 // Custom components
 @import './twd-ext/components-ext.scss';

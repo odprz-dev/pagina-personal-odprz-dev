@@ -1,0 +1,61 @@
+.test{
+  @apply inline-block;
+  @apply bg-red-500;
+  @apply rounded-full;
+  @apply px-3;
+  @apply py-1;
+  @apply text-sm;
+  @apply font-semibold;
+  @apply text-white;
+}
+
+.test:hover{
+  @apply bg-red-700;
+}
+
+
+.social-icon-hero {
+  @apply pb-6;
+  @apply w-8;
+}
+
+.sicon{
+  fill: #333333;
+}
+
+.sicon:hover{
+  fill: #EB6D6F;
+}
+
+// .background-skills{
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-image: url(/assets/bg/background-skillsets.svg);
+// }
+
+// .skills-container:hover::-webkit-scrollbar {
+//   height:  .6rem;
+// }
+
+.skills-container::-webkit-scrollbar{
+  height:  .6rem;
+}
+
+.skills-container:hover::-webkit-scrollbar-thumb{
+  @apply bg-themeRed-800;
+  border-radius: 8px;
+}
+
+.active{
+  @apply text-themeBlue-900;
+  @apply underline;
+}
+
+.icon-s {
+  @apply pb-6;
+  @apply w-8;
+}
+
+.icon-s:hover{
+  filter: invert(42%) sepia(79%) saturate(1352%) hue-rotate(-35deg) brightness(119%) contrast(119%);
+}

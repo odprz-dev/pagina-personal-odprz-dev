@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: true,
     content: ['./src/**/*.html', './src/**/*.ts'],
   },
   target: 'relaxed',
@@ -9,6 +9,7 @@ module.exports = {
   separator: ':',
   theme: {
     screens: {
+      xs: '320px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -20,6 +21,52 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+
+      themeGray:{
+        0: '#FEFEFD',
+        100: '#FDFCFC',
+        200: '#FCFBFA',
+        300: '#FBF9F9',
+        400: '#FAF8F7',
+        500: '#F9F7F6',
+        600: '#F8F5F4',
+        800: '#F7F4F3',
+        900: '#DED2CE',
+      },
+      themeBlack:{
+        0: '#e1e1eb',
+        100: '#c2c4d7',
+        200: '#a4a6c3',
+        300: '#8589af',
+        400: '#676b9c',
+        500: '#52567e',
+        600: '#3e415f',
+        800: '#2B2D42',
+        900: '#252739',
+      },
+      themeBlue:{
+        0: '#e6f4fa',
+        100: '#cde9f6',
+        200: '#b5def1',
+        300: '#9cd3ed',
+        400: '#83c8e8',
+        500: '#6abde4',
+        600: '#52b2df',
+        800: '#39a9db',
+        900: '#2597cc',
+      },
+      themeRed:{
+        0: '#ffebeb',
+        100: '#ffd6d6',
+        200: '#ffc2c2',
+        300: '#ffadad',
+        400: '#ff9999',
+        500: '#ff8585',
+        600: '#ff7070',
+        800: '#ff5c5c',
+        900: '#ff3030',
+      },
+
 
       gray: {
         100: '#f7fafc',
@@ -182,6 +229,7 @@ module.exports = {
       default: '0.25rem',
       md: '0.375rem',
       lg: '0.5rem',
+      xl: '50px',
       full: '9999px',
     },
     borderWidth: {
@@ -216,9 +264,9 @@ module.exports = {
     divideColor: theme => theme('borderColor'),
     divideOpacity: theme => theme('borderOpacity'),
     divideWidth: theme => theme('borderWidth'),
-    fill: {
-      current: 'currentColor',
-    },
+    fill: theme=>({
+      'red': theme('colors.red.500')
+    }),
     flex: {
       '1': '1 1 0%',
       auto: '1 1 auto',
@@ -235,11 +283,11 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Roboto',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
-        'Roboto',
         '"Helvetica Neue"',
         'Arial',
         '"Noto Sans"',
@@ -250,7 +298,8 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      mono: ['Roboto','Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      header: ['Anton','Roboto','"Proxima Nova"']
     },
     fontSize: {
       xs: '0.75rem',
@@ -430,6 +479,7 @@ module.exports = {
       '11/12': '91.666667%',
       full: '100%',
       screen: '100vw',
+      skillcard:'23rem'
     }),
     zIndex: {
       auto: 'auto',
