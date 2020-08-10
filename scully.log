@@ -1,0 +1,49 @@
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+Puppeteer error while rendering ""
+Error: net::ERR_CONNECTION_RESET at http://localhost:1864
+ we will retry rendering this page up to 3 times.Puppeteer error while rendering "[33m/demo[39m"
+Error: net::ERR_CONNECTION_RESET at http://localhost:1864/demo
+ we will retry rendering this page up to 3 times.
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+Puppeteer error while rendering "[33m/demo[39m"
+Error: net::ERR_CONNECTION_RESET at http://localhost:1864/demo
+ we will retry rendering this page up to 3 times.
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------
+Route "[33m/demo[39m" not provided by angular app

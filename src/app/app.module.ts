@@ -11,6 +11,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { SkillsCardComponent } from './components/shared/skills-card/skills-card.component';
 import { BlogEntryComponent } from './components/shared/blog-entry/blog-entry.component';
 import { TitleSectionComponent } from './components/shared/title-section/title-section.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TitleSectionComponent } from './components/shared/title-section/title-s
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
